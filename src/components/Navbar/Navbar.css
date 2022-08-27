@@ -1,0 +1,17 @@
+
+nav h1 {
+    font-size: 23px;
+    list-style: none;
+    color: rgb(92, 87, 87);
+}
+
+.Title {
+    text-decoration: none;
+}
+
+
+.category {
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}

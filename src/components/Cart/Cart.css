@@ -1,0 +1,15 @@
+.CartTitle {
+color: grey;
+font-size: 27px;
+margin: 20px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.NameItemContainer {
+    margin-left: 30px;
+}
+.NameItem {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
