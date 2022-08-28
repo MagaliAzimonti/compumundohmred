@@ -88,7 +88,7 @@ const CartItemDetail = () => {
                     {cart.length !== 0 && (
                         <div>
                             <button className="btn btn-light m-4"onClick={clearCart}>Vaciar carrito</button>
-                            <button className="btn btn-light m-4">Realizar pago</button>
+                            <Link to='/checkout' className="btn btn-light m-4">Realizar pago</Link>
                         </div>
                     )}
                     </>)
