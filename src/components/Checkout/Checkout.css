@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
 
-.btn-finish {
+
+.btn-confirmar {
     font-family: 'Cabin Condensed', sans-serif;
     font-size: 17px;
 }
-.titleDetail{
-    font-size: 30px;
-}
 
-.pDetail {
-    margin: 40px;
-    text-align: center;
-}
-
-.imageDetail {
-    width: 300px;
+.confirm-text {
+    padding-top: 300px;
 }

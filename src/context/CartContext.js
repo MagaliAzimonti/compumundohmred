@@ -36,7 +36,7 @@ export const CartContextProvider = ({ children }) => {
 
   const removeItem = (id) => {
     const prod =  cart.find(pr => pr.id === id)
-    NotificationResult('warning', `Has eliminado ${prod.quantity} ${prod.name}`)
+    NotificationResult('warning', `Eliminaste ${prod.quantity} ${prod.name} ¿te arrepentiste?`)
     const updateCart = cart.filter(prod => prod.id !== id)
     setCart(updateCart)
   }

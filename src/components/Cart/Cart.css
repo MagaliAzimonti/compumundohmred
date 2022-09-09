@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+
 .CartTitle {
 color: grey;
 font-size: 27px;
@@ -12,4 +14,35 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     font-size: 15px;
 
+}
+
+.title-empty {
+    padding-top: 200px;
+    font-size: 30px;
+    
+}
+
+.btn-empty {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+}
+.btn-eliminar {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+}
+.btn-vaciar {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+}
+.btn-pedir {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+}
+
+footer {
+    background-color: rgb(111, 114, 145);
+}
+
+main {
+    margin-top: 100px;
 }

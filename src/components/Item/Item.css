@@ -1,1 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
 
+
+.producto-image {
+    height: 220px; 
+    width:fit-content;
+    display: flex;
+    margin: auto;
+    
+}
+  @media screen and (min-width: 400px) {
+    .producto__images {
+      height: 250px; } }
+  @media screen and (min-width: 768px) {
+    .producto__images {
+      height: 150px; } }
+  @media screen and (min-width: 1000px) {
+    .producto__images {
+      height: 250px; }
+}
+
+.btn-dark {
+    width: 100%;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+}
+
+.card-title {
+    font-size: 22px;
+}
+
+.card-text {
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.productos {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.productos:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}

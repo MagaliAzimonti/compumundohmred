@@ -1,8 +1,34 @@
 .titleMensaje {
     color: grey;
     font-size: 27px;
-    margin: 20px;
+    padding-top: 20px;
+    margin: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.main_home {
+    margin-top: 20px;
+}
+
+/* .home_image img {
+    height: 500px;
+    width:100%;
+    object-fit: cover;
+} */
+  
+.home_image {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../../../public/images/hardwaregamer4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    
+
+}
+
+
 
 

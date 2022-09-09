@@ -6,12 +6,12 @@ import {getFirestore} from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCBtbhQD4wmJj9vBhk--ArQZLfxY0w0TQk",
-  authDomain: "compumundo-hmr.firebaseapp.com",
-  projectId: "compumundo-hmr",
-  storageBucket: "compumundo-hmr.appspot.com",
-  messagingSenderId: "555680936321",
-  appId: "1:555680936321:web:7f35e2b6b473ee94bdb880"
+  apiKey: process.env.REACT_APP_apiKey ,
+  authDomain: process.env.REACT_APP_authDomain ,
+  projectId: process.env.REACT_APP_projectId ,
+  storageBucket: process.env.REACT_APP_storageBucket ,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId ,
+  appId: process.env.REACT_APP_appId
 };
 
 // Initialize Firebase

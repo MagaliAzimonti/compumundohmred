@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+
+.count-title {
+    font-size: 20px;
+}
+
+.btn-add {
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
+}

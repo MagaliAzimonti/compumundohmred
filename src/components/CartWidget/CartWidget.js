@@ -11,7 +11,7 @@ const CartWidget = () => {
     const quantity = getCart()
     return (
         <Link className="btn CartItem" to='/Cart'>
-            <img src='/images/cart.jpg'/>
+            <img src='\images\cart-compra.png'/>
             {quantity}
         </Link>
     )

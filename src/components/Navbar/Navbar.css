@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap');
+
 
 nav h1 {
-    font-size: 23px;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 33px;
+    margin: 10px;
+    padding-left: 10px;
     list-style: none;
-    color: rgb(92, 87, 87);
+    color: rgb(133, 125, 125);
 }
 
 .Title {
@@ -11,7 +16,9 @@ nav h1 {
 
 
 .category {
-    padding: 25px;
+    padding: 30px;
     text-decoration: none;
     color: black;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 17px;
 }

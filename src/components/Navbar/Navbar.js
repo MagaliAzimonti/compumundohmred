@@ -1,5 +1,4 @@
 import './Navbar.css'
-/* import Button from '../Button/Button' */
 import React from 'react'
 import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
@@ -7,7 +6,8 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
 
     return (
-      <nav className="navbar navbar-light bg-light">
+      
+      <nav className="fixed-top navbar navbar-light bg-light">
         <Link to='/' className="Title">
           <h1 class="m-3">Compumundo HMR</h1>
         </Link>
