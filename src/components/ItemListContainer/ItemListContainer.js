@@ -1,10 +1,10 @@
 import './ItemListContainer.css'
-import { useState, useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemList from '../ItemList/ItemList'
 import { getProducts } from '../../services/firebase/firestore'
 
-const ItemListContainer = ({mensaje}) => {
+const ItemListContainer = ({ mensaje }) => {
     const [productos, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
     const { categoryId } = useParams()
@@ -18,10 +18,10 @@ const ItemListContainer = ({mensaje}) => {
             console.log(error)
         }).finally(() => {
             setLoading(false)
-        })   
+        })
     }, [categoryId])
 
-    if(loading) {
+    if (loading) {
         return <h1 className='text-light mt-4'>Loading...</h1>
     }
 
@@ -113,7 +113,7 @@ const ItemListContainer = ({mensaje}) => {
                 </div>
             </footer>
         </>
-        
+
     )
 
 }

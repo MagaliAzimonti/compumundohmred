@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         getDoc(doc(db, "productos", productoId)).then(response => {
             const data = response.data()
-            const productsAdjust = {id: response.id, ...data}
+            const productsAdjust = { id: response.id, ...data }
             setProduct(productsAdjust)
         }).catch(error => {
             console.log(error)
@@ -20,16 +20,16 @@ const ItemDetailContainer = () => {
             setLoading(false)
         })
     }, [productoId])
-    
-    if(loading) {
+
+    if (loading) {
         return <h1 className='text-light mt-4'>Loading...</h1>
     }
 
     return (
-    
+
         <div>
             <h1>Detalle</h1>
-            <ItemDetail {...producto}  />
+            <ItemDetail {...producto} />
         </div>
 
     )

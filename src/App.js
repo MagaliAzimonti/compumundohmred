@@ -9,25 +9,25 @@ import CartItemDetail from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 
 function App() {
-  
+
 
 
   return (
     <div className="App">
       <NotificationProvider>
-      <CartContextProvider>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<ItemListContainer mensaje='Todos nuestros productos'/>} />
-          <Route path='/category/:categoryId' element={<ItemListContainer mensaje='Productos filtrados' />} />
-          <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
-          <Route path='/Cart' element={<CartItemDetail/>}/>
-          <Route path='/checkout' element={<Checkout />} />
-          <Route path='*' element={<h1 className='text-light mt-4'>ERROR 404 NOT FOUND</h1>}/>
-        </Routes>
-      </BrowserRouter>
-      </ CartContextProvider>
+        <CartContextProvider>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path='/' element={<ItemListContainer mensaje='Todos nuestros productos' />} />
+              <Route path='/category/:categoryId' element={<ItemListContainer mensaje='Productos filtrados' />} />
+              <Route path='/detail/:productoId' element={<ItemDetailContainer />} />
+              <Route path='/Cart' element={<CartItemDetail />} />
+              <Route path='/checkout' element={<Checkout />} />
+              <Route path='*' element={<h1 className='text-light mt-4'>ERROR 404 NOT FOUND</h1>} />
+            </Routes>
+          </BrowserRouter>
+        </ CartContextProvider>
       </NotificationProvider>
     </div>
   );

@@ -9,20 +9,20 @@ import NotificationContext from '../../Notificacion/Notification'
 const ItemDetail = ({ id, name, description, img, stock, price }) => {
     const [addQuantity, setQuantity] = useState(0)
     const { addItem, productQuantity } = useContext(CartContext)
-    const { NotificationResult } = useContext (NotificationContext)
+    const { NotificationResult } = useContext(NotificationContext)
 
     const handleOnAdd = (quantity) => {
         setQuantity(quantity)
         const addProduct = {
-            id, name, price, quantity, total: (price*quantity)
+            id, name, price, quantity, total: (price * quantity)
         }
-        if(quantity <= 0) {
+        if (quantity <= 0) {
             NotificationResult('danger', `Este producto no está disponible`)
         } else {
             addItem(addProduct)
             NotificationResult('success', `Se agregaron ${quantity} ${name}`)
         }
-        
+
     }
 
     const prodQuantity = productQuantity(id)
@@ -31,7 +31,7 @@ const ItemDetail = ({ id, name, description, img, stock, price }) => {
         <>
             <main>
                 <div className='container'>
-                    <div className='row row-cols-2'>
+                    <div className='row row-cols-1 row-cols-md-2'>
                         <div className='col'>
                             <img className="imageDetail mb-4" src={img} alt='detalle imagenes' />
                         </div>

@@ -1,7 +1,7 @@
 import './Item.css'
 import { Link } from 'react-router-dom'
 
-const Item = ({producto}) => {
+const Item = ({ producto }) => {
 
     return (
         <div class="col">
@@ -16,7 +16,7 @@ const Item = ({producto}) => {
                     <Link to={`/detail/${producto.id}`} class="btn btn-dark">Ver más</Link>
                 </div>
             </div>
-        </div>   
+        </div>
     )
 }
 
